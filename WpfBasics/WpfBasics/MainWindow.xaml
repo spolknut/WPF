@@ -1,0 +1,138 @@
+﻿<Window x:Class="WpfBasics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBasics"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="WpfBasics" Height="800" Width="400">
+
+    <!-- Boarder definition for all elements to the window borders -->
+    <Border Margin="10">
+        <!-- Stack panel stacks everything from top to bottom. Sized as need be. -->
+        <StackPanel>
+            <!-- A grid is used to create three columns for the three buttons -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- Column width '*' is used as a % width, possible to use 2*, 3* etc. 
+                    One '*' is used for each column for equal width -->
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--  Adding margin to the first add last bottom to achive proper spacing -->
+                <Button x:Name="ApplyButton" Click="ApplyButton_Click" Grid.Column="0" Margin="0 0 10 0" Content="Apply"></Button>
+                <Button x:Name="ResetButton" Click="ResetButton_Click"  Grid.Column="1" Content="Reset"></Button>
+                <Button Grid.Column="2" Margin="10 0 0 0" Content="Refresh"></Button>
+            </Grid>
+
+            <!-- If only two margin values are specified the first is used for left and right and the second for top and bottom -->
+            <TextBlock Text="Pulse properties" FontWeight="Bold" Margin="0 10"/>
+            
+            <!-- Description -->
+            <TextBlock Text="Description"/>
+            <!-- Friendly reminder: Padding goes on the inside, margin goes on the outside -->
+            <TextBox x:Name="DescriptionText" Padding="2"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Status -->
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <TextBlock Text="Status"/>
+                    <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+                <!-- Revision -->
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Revision"/>
+                    <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+            </Grid>
+
+            <!-- Partnumber -->
+            <TextBlock Text="Partnumber"/>
+            <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+
+            <!-- Raw material -->
+            <TextBlock Text="Raw Material" FontWeight="Bold" Margin="0 10"/>
+            <!-- Description -->
+            <TextBlock Text="Material"/>
+            <ComboBox Padding="2"/>
+
+            <!-- Material Information -->
+            <TextBlock Text="Material Information" FontWeight="Bold" Margin="0 10"/>
+        
+            <!-- Work Centres -->
+            <TextBlock Text="Work Centres" Margin="0 0 0 10"/>
+
+            <!-- Check boxes -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Column 1 -->
+                <StackPanel Grid.Column="0">
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbWeld" Content="Weld"/>
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbAssembly" Content="Assembly"/>
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbPlasma" Content="Plasma"/>
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbLaser" Content="Laser"/>
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbPurchase" Content="Purchase"/>
+                </StackPanel>
+
+                <!-- Column 2 -->
+                <StackPanel Grid.Column="1">
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbLathe" Content="Lathe"/>
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbDrill" Content="Drill"/>
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbFold" Content="Fold"/>
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbRoll" Content="Roll"/>
+                    <CheckBox Unchecked="Checkbox_Checked" Checked="Checkbox_Checked" x:Name="cbSaw" Content="Saw"/>
+                </StackPanel>
+            </Grid>
+            
+            <!-- Length -->
+            <TextBlock Text="Length"/>
+            <TextBox Name="TextBoxName" Padding="2"/>
+
+            <!-- Mass -->
+            <TextBlock Text="Mass"/>
+            <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+
+            <!-- Finish -->
+            <TextBlock Text="Finish"/>
+            <ComboBox Name="ComboxFinish" SelectionChanged="ComboxFinish_SelectionChanged" SelectedIndex="0" Padding="2">
+                <ComboBoxItem>Painted</ComboBoxItem>
+                <ComboBoxItem>Not Painted</ComboBoxItem>
+            </ComboBox>
+
+            <!-- Purchase Information -->
+            <TextBlock Text="Purchase Information"/>
+            <ComboBox SelectedIndex="0" Padding="2">
+                <ComboBoxItem>Rubber</ComboBoxItem>
+                <ComboBoxItem>Not Rubber</ComboBoxItem>
+            </ComboBox>
+
+            <!-- Supplier Name -->
+            <TextBlock Text="Supplier Name"/>
+            <TextBox Padding="2"/>
+
+            <!-- Supplier Code -->
+            <TextBlock Text="Supplier Code"/>
+            <TextBox Padding="2"/>
+
+            <!-- Additional Information -->
+            <TextBlock Text="Additional Information" FontWeight="Bold" Margin="0 10"/>
+            
+            <!-- Note -->
+            <TextBlock Text="Note"/>
+            <TextBox Name="TextBoxNote" Padding="2"/>
+            
+        </StackPanel>
+    </Border>
+</Window>
