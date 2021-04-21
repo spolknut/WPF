@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.IO;
 using System.Collections.Generic;
 
-namespace TreeView
+namespace WpfTreeView
 {
   /// <summary>
   /// Interaction logic for MainWindow.xaml

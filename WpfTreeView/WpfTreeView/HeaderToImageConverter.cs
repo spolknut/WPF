@@ -4,7 +4,7 @@ using System.IO;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
-namespace TreeView
+namespace WpfTreeView
 {
   [ValueConversion(typeof(string), typeof(BitmapImage))]
   public class HeaderToImageConverter : IValueConverter
