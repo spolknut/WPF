@@ -3,6 +3,7 @@ using System.Globalization;
 using System.IO;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
+using WpfTreeView.Directory;
 
 namespace WpfTreeView
 {
@@ -23,7 +24,7 @@ namespace WpfTreeView
         return null;
 
       // Get name of file/folder
-      var name = MainWindow.GetFolderFileName(fullPath);
+      var name = DirectoryStructure.GetFolderFileName(fullPath);
 
       // By default, presume an image
       string image = "file.png";
