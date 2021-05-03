@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfViewModelBasicPrinciples", "WpfViewModelBasicPrinciples\WpfViewModelBasicPrinciples.csproj", "{012EB1EA-F17E-4C55-840B-8B223CE00223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfViewModelFody", "WpfViewModelFody\WpfViewModelFody.csproj", "{1AAB4037-11A4-479B-B529-BFF4C88214F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{012EB1EA-F17E-4C55-840B-8B223CE00223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012EB1EA-F17E-4C55-840B-8B223CE00223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012EB1EA-F17E-4C55-840B-8B223CE00223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012EB1EA-F17E-4C55-840B-8B223CE00223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAB4037-11A4-479B-B529-BFF4C88214F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAB4037-11A4-479B-B529-BFF4C88214F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAB4037-11A4-479B-B529-BFF4C88214F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAB4037-11A4-479B-B529-BFF4C88214F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D99CB5F-4BE3-4E15-9CD8-673A05B74840}
+	EndGlobalSection
+EndGlobal
