@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfTreeView.Directory.Data
+namespace WpfTreeView
 {
   /// <summary>
   /// Informaton about a directory item such a drive, a folder or a file
