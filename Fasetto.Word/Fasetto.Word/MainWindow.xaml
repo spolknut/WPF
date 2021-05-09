@@ -9,7 +9,11 @@
         AllowsTransparency="True"
         Icon="Images/Logo/logo-small.png"        
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <TextBlock Text="Hello friend!" FontSize="24"/>
+        <TextBlock Text="Hello friend!" FontSize="24"/>
+        <Button FontSize="24" Content="Button!"/>
+        <Label FontSize="24" Content="Label!" />
+        <TextBox FontSize="24" Text="Text box!" />
+    </StackPanel>
 </RibbonWindow>
